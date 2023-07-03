@@ -22,7 +22,7 @@ const validateDataByString = (text) => {
   let result = prompt(text);
 
   while (!result || isNaN(result)) {
-    alert("Вы ввели некорректные данные, попробуйте еще раз");
+    alert("Error dates");
     result = prompt(text);
   }
 
@@ -33,7 +33,7 @@ const validateDataByNumbers = (text) => {
   let result = prompt(text);
 
   while (!result || !isNaN(result)) {
-    alert("Вы ввели некорректные данные, попробуйте еще раз");
+    alert("Error dates");
     result = prompt(text);
   }
 
